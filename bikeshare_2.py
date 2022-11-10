@@ -151,29 +151,29 @@ def user_stats(df):
     try:
         print("counts of user types: {}".format(df['User Type'].value_counts()))
     except KeyError:
-        print("No data is available")
+        print("Data is unavailable")
 
     # Display counts of gender
     try:
         print("counts of gender: {}".format(df['Gender'].value_counts()))
     except KeyError:
-        print("No data is available")
+        print("Data is unavailable")
 
     # Display earliest, most recent, and most common year of birth
     try:
         print("earliest year of birth: {}".format(df['Birth Year'].min()))
     except KeyError:
-        print("No data is available")
+        print("Data is unavailable")
 
     try:
         print("most recent year of birth: {}".format(df['Birth Year'].max()))
     except KeyError:
-        print("No data is available")
+        print("Data is unavailable")
 
     try:
         print("most common year of birth: {}".format(df['Birth Year'].mode()[0]))
     except KeyError:
-        print("No data is available")
+        print("Data is unavailable")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
