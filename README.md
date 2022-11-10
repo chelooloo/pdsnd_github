@@ -6,7 +6,7 @@ Oct/24/2022
 
 ### Project Title
 Replace the Project Title
-bikeshare_2
+explore US bikeshare data
 
 ### Description
 Describe what your project is about and what it does
