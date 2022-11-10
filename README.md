@@ -10,7 +10,7 @@ explore US bikeshare data
 
 ### Description
 Describe what your project is about and what it does
-Pulling out bikeshare data and analyzing it
+calculate statistics and build an interactive environment where a user chooses the data and filter for a dataset to analyze
 
 ### Files used
 Include the files used
