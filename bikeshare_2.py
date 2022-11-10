@@ -20,7 +20,7 @@ def get_filters():
     while True:
         city = input("Would you like to see data for Chicago, New York City, or Washington?: ").lower()
         if city not in ('chicago', 'new york city', 'washington', 'all'):
-            print("{} is not a valid input. Try again!".format(city))
+            print("{} is not a valid input.".format(city))
             continue
         else:
             break
@@ -29,7 +29,7 @@ def get_filters():
     while True:
         month = input("Which month? January, February, March, April, May, or June?: ").lower()
         if month not in ('january', 'february', 'march', 'april', 'may', 'june', 'all'):
-            print("{} is not a valid input. Try again!".format(month))
+            print("{} is not a valid input.".format(month))
             continue
         else:
             break
@@ -38,7 +38,7 @@ def get_filters():
     while True:
         day = input("Which day?: ").title()
         if day not in ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'All'):
-            print("{} is not a valid input. Try again!".format(day))
+            print("{} is not a valid input.".format(day))
             continue
         else:
             break
