@@ -20,7 +20,7 @@ def get_filters():
     while True:
         city = input("Would you like to see data for Chicago, New York City, or Washington?: ").lower()
         if city not in ('chicago', 'new york city', 'washington', 'all'):
-            print("{} is not a valid input. Try again!".format(city))
+            print("{} is not a valid input.".format(city))
             continue
         else:
             break
@@ -29,7 +29,7 @@ def get_filters():
     while True:
         month = input("Which month? January, February, March, April, May, or June?: ").lower()
         if month not in ('january', 'february', 'march', 'april', 'may', 'june', 'all'):
-            print("{} is not a valid input. Try again!".format(month))
+            print("{} is not a valid input.".format(month))
             continue
         else:
             break
@@ -38,7 +38,7 @@ def get_filters():
     while True:
         day = input("Which day?: ").title()
         if day not in ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'All'):
-            print("{} is not a valid input. Try again!".format(day))
+            print("{} is not a valid input.".format(day))
             continue
         else:
             break
@@ -151,29 +151,29 @@ def user_stats(df):
     try:
         print("counts of user types: {}".format(df['User Type'].value_counts()))
     except KeyError:
-        print("No data is available")
+        print("Data is unavailable")
 
     # Display counts of gender
     try:
         print("counts of gender: {}".format(df['Gender'].value_counts()))
     except KeyError:
-        print("No data is available")
+        print("Data is unavailable")
 
     # Display earliest, most recent, and most common year of birth
     try:
         print("earliest year of birth: {}".format(df['Birth Year'].min()))
     except KeyError:
-        print("No data is available")
+        print("Data is unavailable")
 
     try:
         print("most recent year of birth: {}".format(df['Birth Year'].max()))
     except KeyError:
-        print("No data is available")
+        print("Data is unavailable")
 
     try:
         print("most common year of birth: {}".format(df['Birth Year'].mode()[0]))
     except KeyError:
-        print("No data is available")
+        print("Data is unavailable")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
